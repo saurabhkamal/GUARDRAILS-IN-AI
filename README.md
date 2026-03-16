@@ -18,7 +18,7 @@ Users can chat with an educational database (students, courses, transactions) us
 |---|---|
 | Backend API | FastAPI + Uvicorn |
 | AI Agent | LangChain (`create_tool_calling_agent`) |
-| LLM | Euron API — `gpt-4.1-nano` (OpenAI-compatible) |
+| LLM | API — `gpt-4.1-nano` (OpenAI-compatible) |
 | Database | Supabase (PostgreSQL) |
 | Frontend | Streamlit |
 | Monitoring | Supabase `monitoring_logs` table + local JSONL file |
@@ -77,7 +77,7 @@ Users can chat with an educational database (students, courses, transactions) us
                            ▼
             ┌──────────────────────────────┐
             │  LangChain Agent (LLM)       │
-            │  Euron gpt-4.1-nano          │
+            │        gpt-4.1-nano          │
             └──────────────┬───────────────┘
                            │
                            ▼
@@ -408,7 +408,7 @@ Interactive API docs available at `http://localhost:8000/docs` when the backend 
 ### Prerequisites
 - Python 3.10+
 - A Supabase project with the schema applied
-- An Euron API key (or any OpenAI-compatible API key)
+- An API key (or any OpenAI-compatible API key)
 
 ### 1. Clone the repository
 ```bash
@@ -423,8 +423,8 @@ SUPABASE_URL=https://your-project.supabase.co
 SUPABASE_KEY=your-supabase-anon-key
 SUPABASE_DB_PASSWORD=your-database-password
 
-EURON_API_KEY=your-euron-api-key
-EURON_BASE_URL=https://api.euron.one/api/v1/euri
+API_KEY=your-api-key
+BASE_URL=https://api.euron.one/api/v1/euri
 LLM_MODEL=gpt-4.1-nano
 
 API_URL=http://localhost:8000
