@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sleep:*)",
+      "Bash(curl:*)",
+      "Bash(pkill:*)",
+      "Bash(cd:*)",
+      "Bash(taskkill:*)",
+      "Bash(echo:*)"
+    ]
+  }
+}
